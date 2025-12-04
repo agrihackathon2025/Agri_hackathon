@@ -31,11 +31,31 @@
     <div class="banner"><img src="Tamil_hackathon.jpg" alt="Agri Hackathon Banner"></div>
   </section>
 
-  <footer>
-    🌾 Visit the official site:
-    <a href="https://tnau.ac.in/site/cpmb/agri-hackathon-2025/" target="_blank">
-      https://tnau.ac.in/site/cpmb/agri-hackathon-2025/
-    </a>
-  </footer>
+ <footer>
+  🌾 Visit the official site:
+  <a href="https://tnau.ac.in/site/cpmb/agri-hackathon-2025/" target="_blank">
+    https://tnau.ac.in/site/cpmb/agri-hackathon-2025/
+  </a>
+</footer>
+
+<!-- ===== JavaScript Section Control ===== -->
+<script>
+function showSection(id) {
+  // Hide all sections
+  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
+  
+  // Show the selected one
+  document.getElementById(id).classList.add('active-section');
+  
+  // Update the active button
+  document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  // Scroll to top smoothly
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
 </body>
 </html>
+
