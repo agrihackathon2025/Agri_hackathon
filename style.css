@@ -387,53 +387,137 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ===== MOBILE RESPONSIVENESS ===== */
-@media (max-width: 768px) {
-  /* Logo alignment fix */
-  .logo-bar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
 
-  .logo-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 320px;
-  }
+/* ===== HAMBURGER MENU ===== */
 
-  .logo-row img {
-    height: 70px;
-    width: auto;
-  }
+/* ===== CLEAN MOBILE HEADER ===== */
+@media (max-width:768px){
 
-  .logo-title {
-    order: 2;
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1.4;
-  }
+header{
+padding:10px 15px;
+position:relative;
+}
 
-  /* Fund layout */
-  .fund-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* keep logos left/right */
+.logo-bar{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+}
 
-  .fund-image img {
-    max-width: 80%;
-    margin-top: 20px;
-  }
+/* smaller logos */
+.logo-bar img{
+height:60px;
+}
 
-  /* Problem statements responsive */
-  .problem-page-container {
-    flex-direction: column;
-  }
+/* center title */
+.logo-title{
+flex:1;
+font-size:1.2rem;
+text-align:center;
+}
 
-  .problem-column {
-    min-width: 100%;
-  }
+/* hamburger button */
+.menu-toggle{
+display:block;
+position:absolute;
+right:20px;
+top:80px;
+font-size:26px;
+cursor:pointer;
+color:#1b4332;
+}
+
+/* remove nav border */
+nav{
+border-top:none;
+}
+
+/* hide menu */
+nav ul{
+display:none;
+flex-direction:column;
+gap:12px;
+background:white;
+padding:20px;
+margin:10px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* show menu */
+nav ul.show{
+display:flex;
+}
+
+/* menu links */
+nav ul li a{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px;
+font-size:1rem;
+}
+
+/* responsive layout fixes */
+.fund-container{
+flex-direction:column;
+}
+
+.problem-page-container{
+flex-direction:column;
+}
+
+.problem-column{
+min-width:100%;
+}
+
+.about-layout{
+flex-direction:column;
+align-items:center;
+}
+
+.about-banner img{
+max-width:90%;
+}
+
+}
+/* Download section styling */
+
+.download-section{
+text-align:center;
+margin-top:30px;
+}
+
+.download-item{
+margin-bottom:35px;
+}
+
+.download-item h3{
+margin-bottom:15px;
+color:#1b4332;
+font-weight:600;
+}
+
+.btn-download{
+display:inline-block;
+background:#2d6a4f;
+color:white;
+padding:14px 26px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+font-size:1.05rem;
+transition:all .3s ease;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-download i{
+margin-right:8px;
+}
+
+.btn-download:hover{
+background:#1b4332;
+transform:translateY(-3px);
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
 }

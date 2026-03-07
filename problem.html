@@ -17,8 +17,13 @@
       <div class="logo-right"><img src="tnau-logo.png" alt="Tamil Nadu Agricultural University Logo"></div>
     </div>
 
-    <nav>
-      <ul>
+    <!-- Hamburger icon (mobile only) -->
+<div class="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+  <ul id="nav-menu">
         <li><a href="https://tnau.ac.in/site/cpmb/agri-hackathon-2025/"><i class="fa-solid fa-house"></i> Home</a></li>
         <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
         <li><a href="guidelines.html"><i class="fa-solid fa-book"></i> Guidelines</a></li>
@@ -135,12 +140,23 @@ perishable produces (Green refrigerator).</li>
           <li>Traceability Tools for Niche Products.</li>
         </ol>
 
-        <div style="text-align:center;">
-          <a href="Agri hackathon 70 titles 6 themes.pdf" download class="btn-download">
-            <i class="fa-solid fa-file-arrow-down"></i> Download PDF
-         </a>
-        </div>
-      </div>
+        <div class="download-section">
+
+  <div class="download-item">
+    <h3>Problem Statement Titles (70 Titles – 6 Themes)</h3>
+    <a href="Agri hackathon 70 titles 6 themes.pdf" download class="btn-download">
+      <i class="fa-solid fa-file-arrow-down"></i> Download PDF
+    </a>
+  </div>
+
+  <div class="download-item">
+    <h3>Extended Problem Statements (Explained in detail) </h3>
+    <a href="Extended Problem Statements.pdf" download class="btn-download">
+      <i class="fa-solid fa-file-arrow-down"></i> Download PDF
+    </a>
+  </div>
+
+</div>
 
      
       </div>
@@ -148,6 +164,14 @@ perishable produces (Green refrigerator).</li>
   </section>
 
   <footer>
+<script>
+const toggleBtn = document.querySelector(".menu-toggle");
+const menu = document.querySelector("#nav-menu");
+
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+</script>
     🌾 Visit the official site:
     <a href="https://tnau.ac.in/site/cpmb/agri-hackathon-2025/" target="_blank">
       https://tnau.ac.in/site/cpmb/agri-hackathon-2025/
